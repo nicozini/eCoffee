@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Cafetera Molinex",
+    "category": "Malek",
+    "price": "40",
+    "stock": "68",
+    "features": "Estocolmo"
+  },
+  {
+    "id": 2,
+    "name": "Ebonee Coffee Maker",
+    "category": "Antat",
+    "price": "550",
+    "stock": "85743",
+    "features": "Helsinky"
+  },
+  {
+    "id": 3,
+    "name": "Coffe Elsy",
+    "category": "Oglevie",
+    "price": "971",
+    "stock": "0",
+    "features": "Tokio"
+  },
+  {
+    "id": 4,
+    "name": "Mack Coffee Maker",
+    "category": "Cornau",
+    "price": "39731",
+    "stock": "2323",
+    "features": "Denver"
+  },
+  {
+    "id": 5,
+    "name": "Levey Titanium Coffee",
+    "category": "Alekseicik",
+    "price": "32686",
+    "stock": "086",
+    "features": "Rio"
+  }
+]

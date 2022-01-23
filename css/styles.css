@@ -1,0 +1,364 @@
+/* Body */
+body {
+    background-color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+header .nav {
+    min-height: 65px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+header .logo h2 {
+    font-size: 26px;
+    display: inline-block;
+    color: #8d4925;
+}
+
+header .logo .icon {
+    color: #bfbfbf;
+}
+
+header .logo svg {
+    width: 20px;
+    height: 20px;
+}
+
+header .logo p {
+    color: #777777;
+    font-size: 20px;
+    display: inline-block;
+}
+
+header .menu .c1 {background-color: #a06c3f;}
+header .menu .c2 {background-color: #834f23;}
+header .menu .c3 {background-color: #8d4925;}
+header .menu .c4 {background-color: #582417;}
+
+header .menu .c1:hover,
+header .menu .c2:hover,
+header .menu .c3:hover,
+header .menu .c4:hover {background-color: #002d44;}
+
+.slider .slide .carousel-item {
+    max-height: 450px;
+}
+
+.caption-position-one {
+    position: absolute;
+    top: 50%;
+    left: -600px;
+}
+
+.caption-position-two {
+    position: absolute;
+    top: 10%;
+    left: -330px;
+}
+
+.caption-position-one > h5,
+.caption-position-two > h5 {
+    color: #8d4925;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 80px;
+}
+
+.create-product > button {
+    position: fixed;
+    right: 10px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100px;
+    font-weight: 300;
+    font-size: 60px;
+}
+
+
+
+/* Main */
+main .title {
+    color: #8d4925;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+main .products .my-btn-color {
+    color: #fff;
+    background-color: #582417;
+}
+
+main .products .my-btn-color:hover {background-color: #58241796}
+
+
+
+
+/* About eCoffe */
+.picture img {
+    max-width: 200px;
+    max-height: 350px;
+}
+
+.about-me .picture .my-name {
+    color: #545454;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.about-me .picture .ceo {
+    color: #545454;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.about-me .info .title {
+    color: #8d4925;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.about-me .info .resumen {
+    letter-spacing: 1px;
+}
+
+.about-me .info .label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #8d4925;
+    margin-bottom: 10px;
+}
+
+.about-me .info .progress {
+    background-color: #b88b5c;
+    border-radius: 0;
+    height: 25px;
+}
+
+.about-me .info .progress .progress-bar {
+    background-color: #834f23;
+    line-height: 25px;
+    padding-left: 20px;
+}
+
+/* Contact */
+.contact {
+    border-top: 1px solid #cbcbcb;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.contact .contact-title {
+    color: #8d4925;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}    
+
+.contact .my-form input[type="text"],
+.contact .my-form input[type="email"],
+.contact .my-form textarea {
+    padding: 15px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact .my-form textarea {
+    height: 150px;
+    min-height: 150px;
+    max-height: 250px;
+}
+
+.contact .my-form .my-button {
+    background-color: #582417;
+    border: none;
+    padding: 7px 30px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    width: auto;
+    border-radius: 3px;
+}
+
+.contact .my-form .my-button:hover {
+    background-color: #58241796;
+}
+
+/* Footer */
+.social-network {
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+.social-network .icon {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    background-color: #cbcbcb;
+    display: inline-block;
+    margin: 0px 20px;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all .3s ease;
+}
+
+.social-network .icon svg {
+    width: 40px;
+    height: 40px;
+}
+
+.social-network .whatsapp  {background-color: #128c7e;}
+.social-network .instagram  {background-color: #833ab4;}
+.social-network .facebook  {background-color: #3b5998;}
+
+.social-network .whatsapp:hover,
+.social-network .instagram:hover,
+.social-network .facebook:hover  {background-color: #12354d;}
+
+
+
+/* Dark Mode section */
+.dark-a {
+    color: #000;
+    cursor: pointer;
+}
+
+.light-a {
+    color: #ffc107;
+}
+
+.dark-background {
+    background-color: rgba(0, 0, 0, 0.842)  !important;
+}
+
+.dark-text {
+    color: #fff !important;
+}
+
+.dark-form {
+    background-color: rgba(233, 220, 220, 0.829);
+    color: #fff;
+}
+
+
+/* Product Create Confirm Style */
+.confirm-product-style {
+    background-color: #226d1f;
+    border: none;
+    padding: 7px 30px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    width: auto;
+    border-radius: 3px;
+}
+
+
+/* Check Product List */
+.item {
+    color: #58241796;
+}
+
+.item:hover {
+    cursor: pointer;
+    color: #582417;
+    background-color: #ebebeb;
+}
+
+.item-title {
+    color: #8d4925;
+    margin-bottom: 30px;
+}
+
+
+
+/* Coffee Game */
+.game-div {
+    /* background-color: #777777; */
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5Px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-div:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.game-title {
+    color: #8d4925;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.game-p {
+    color: #8d4925;
+    padding: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+/* Dispositivos md */
+@media screen and (max-width: 768px) {
+    .social-network .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-network .icon svg {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Dispositivos lg */
+@media screen and (max-width: 992px) {
+    .logo {
+        height: 76px;
+    }
+
+    header .menu {
+        min-height: 76px;
+    }
+
+    header .menu a {
+        width: 100%;
+    }    
+}
+
+
+/* Dispositivos xl */
+@media screen and (max-width: 1200px) {
+    
+}
+
+
+/* Dispositivos xxl */
+@media screen and (max-width: 1400px) {
+    
+}
