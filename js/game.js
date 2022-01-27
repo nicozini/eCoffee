@@ -67,7 +67,7 @@ window.addEventListener("load", function(){
                 let titleContent = document.createTextNode(`${coffeeObject[choice].name}`);
                 let pContent = document.createTextNode(`Your Coffee have ${coffeeObject[choice].ingredientOne}, a little of ${coffeeObject[choice].ingredientTwo} and ${coffeeObject[choice].ingredientOne}. All just for $${coffeeObject[choice].price}. Enjoy!!`);
     
-                newImg.src = "https://cdn-icons.flaticon.com/png/512/2954/premium/2954820.png?token=exp=1642896325~hmac=5972d61b110b390cef0f2557ef59f279"
+                newImg.src = "https://cdn-icons-png.flaticon.com/512/924/924514.png"
                 newImg.width = 120;
                 newImg.height = 120;
 
@@ -82,11 +82,12 @@ window.addEventListener("load", function(){
                 newTitle.classList.add("game-title");
                 newP.classList.add("game-p");
 
+                // Función para reiniciar el juego
                 const clear = () => {
                     setTimeout(() => {
                         localStorage.clear();
                         location.reload();  
-                    }, 5000)
+                    }, 10000)
                 }
                 clear();
 
