@@ -51,6 +51,13 @@ $(document).ready(function () {
       else return amount + amount * 0.105 + incluyeEnvio + adicionales(amount);
     };
 
-    alert(`The total cost of your order is $${costoTotal(amount)}. It includes additional taxes.`);
+    $(".coffee-order-card")
+      .fadeIn("fast", function() {
+        $(".coffee-content-simulation")
+          .append("<h1>Simulation result:</h1>")
+          .append(`The total cost of your order is $${costoTotal(amount)}. It includes additional taxes.`)
+          .css("color","#8d4925")
+      })
+    .fadeToggle(5000);
   });
 });
