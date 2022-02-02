@@ -312,6 +312,14 @@ main .products .my-btn-color:hover {background-color: #58241796}
 
 
 
+.data-simulator-enter {
+    display: none;
+    width: 50vw;
+    height: fit-content;
+    background-color: #a06c3f;
+    color: #fff;
+}
+
 
 
 

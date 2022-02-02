@@ -21,43 +21,48 @@ $(document).ready(function () {
 
   // Simulator  
   $(".simulator-button").click(function () {
-    let amount = parseInt(
-      prompt("Please enter the amount you expect to spend in the store...")
-    );
 
-    let costoTotal = (amount) => {
-      let iva = parseInt(prompt("¿Wich IVA tax do you need?:  1 (21%)  o  2 (10.5%"));
-      let envio = 10;
-      let requiereEnvio = prompt(
-        `The shipping cost is ${envio}% of the price. ¿Does it require shipping? Yes / No`
-      ).toLowerCase();
-      let incluyeEnvio = 0;
+    $(".data-simulator-enter").slideToggle("slow")
 
-      if (requiereEnvio == "yes") {
-        incluyeEnvio = amount * (envio / 100);
-      } else if (requiereEnvio == "no") {
-        incluyeEnvio = 0;
-      } else {
-        alert("¡Error! - Enter yes or no for shipping.");
+    $(".calculate-simulator").click(function (event) {
+      event.preventDefault()
+      let amount = parseInt(document.getElementById("inputAmount").value)
+      let iva = parseInt(document.getElementById("inputIva").value)
+      let shipping = document.getElementById("inputShipping").value
+
+      // Total Cost
+      let costoTotal = (number) => {
+        let envio = 10;
+        let incluyeEnvio = 0;
+
+        if (shipping == "yes") {
+          incluyeEnvio = number * (envio / 100);
+        } else if (shipping == "no") {
+          incluyeEnvio = 0;
+        } else {
+          alert("¡Error! - Enter yes or no for shipping.");
+        }
+
+        // Adition taxes
+        let adicionales = (number) => {
+          return number * 0.25;
+        };
+  
+        if (iva === 21) {
+          return amount + amount * 0.21 + incluyeEnvio + adicionales(amount)
+        } else return amount + amount * 0.105 + incluyeEnvio + adicionales(amount);
+
       }
 
-      // Adition taxes
-      let adicionales = (amount) => {
-        return amount * 0.25;
-      };
-
-      if (iva === 1)
-        return amount + amount * 0.21 + incluyeEnvio + adicionales(amount);
-      else return amount + amount * 0.105 + incluyeEnvio + adicionales(amount);
-    };
-
-    $(".coffee-order-card")
-      .fadeIn("fast", function() {
-        $(".coffee-content-simulation")
-          .append("<h1>Simulation result:</h1>")
-          .append(`The total cost of your order is $${costoTotal(amount)}. It includes additional taxes.`)
-          .css("color","#8d4925")
-      })
-    .fadeToggle(5000);
-  });
-});
+      $(".coffee-order-card")
+        .fadeIn(25000, function() {
+          $(".coffee-content-simulation")
+            .append("<h1>Simulation result:</h1>")
+            .append(`The total cost of your order is $${costoTotal(amount)}. It includes additional taxes.`)
+            // .css("color","#8d4925")
+            .css("color", "red")
+        })
+      .fadeToggle(8000);
+    })
+  })
+})
