@@ -62,7 +62,9 @@ $(document).ready(function () {
             // .css("color","#8d4925")
             .css("color", "red")
         })
-      .fadeToggle(8000);
+      .fadeToggle(8000, function() {
+        location.reload();
+      });
     })
   })
 })
