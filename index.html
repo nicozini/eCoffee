@@ -154,6 +154,42 @@
                             <h6 class="card-subtitle text-muted mb-4">Number one brands in the market</h6>
                             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora excepturi labore deserunt reiciendis minus numquam a error dolore pariatur placeat.</p>
                             <a href="#" class="btn my-btn-color">¡Buy Now!</a>
+                            <!-- <a href="#stockButton" class="btn my-btn-color mt-2" id="stockButton">Chech Stock</a> -->
+
+                            <!-- Modal Stock -->
+                            <button 
+                            class="btn btn-warning mt-2"
+                            data-bs-toggle="modal"
+                            data-bs-target="#mi-modal-1"
+                            id="stockButton"
+                        >
+                           Check Stock
+                        </button>
+        
+                        <div 
+                            class="modal fade"
+                            id="mi-modal-1"    
+                            tabindex="-1"
+                            aria-hidden="true"
+                            aria-labedlledby="label-modal-1"
+                        >
+    
+                            <div class="modal-dialog">    
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Coffee Makers Stock</h5>
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                    </div>
+                                    
+                                    <div class="modal-body"></div>
+                                    
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         </div>
                     </div>
                 </div>
@@ -239,27 +275,27 @@
                         aria-labedlledby="label-modal-1"
                     >
 
-                    <div class="modal-dialog">
+                        <div class="modal-dialog">
 
-                            <div class="modal-content">
+                                <div class="modal-content">
 
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Coffee Order</h5>
-                                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                                </div>
-                                
-                                <div class="modal-body">
-                                    <h3>Welcome to your eCoffee checkout...</h3>
-                                </div>
-                                
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                                    <button type="button" class="btn btn-warning">
-                                        <a href="./simulator.html" class="text-decoration-none text-dark">Continue</a>
-                                    </button>
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Coffee Order</h5>
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                    </div>
+                                    
+                                    <div class="modal-body">
+                                        <h3>Welcome to your eCoffee checkout...</h3>
+                                    </div>
+                                    
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-warning">
+                                            <a href="./simulator.html" class="text-decoration-none text-dark">Continue</a>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                     
                 </div>
@@ -392,5 +428,6 @@
     <script src="./js/jQueryFunctions.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/game.js"></script>
+    <script src="./js/ajaxProducts.js"></script>
 </body>
 </html>

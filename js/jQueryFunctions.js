@@ -61,10 +61,10 @@ $(document).ready(function () {
             .append(`The total cost of your order is $${costoTotal(amount)}. It includes additional taxes.`)
             // .css("color","#8d4925")
             .css("color", "red")
+            .fadeToggle(8000, function() {
+              location.reload();
+            });
         })
-      .fadeToggle(8000, function() {
-        location.reload();
-      });
     })
   })
 })
