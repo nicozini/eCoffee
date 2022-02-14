@@ -294,7 +294,7 @@ main .products .my-btn-color:hover {background-color: #58241796}
     align-items: center;
 }
 
-.game-div:hover {
+.game-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -311,7 +311,7 @@ main .products .my-btn-color:hover {background-color: #58241796}
 }
 
 
-
+/* Coffee Simulator */
 .data-simulator-enter {
     display: none;
     width: 50vw;
@@ -319,15 +319,6 @@ main .products .my-btn-color:hover {background-color: #58241796}
     background-color: #a06c3f;
     color: #fff;
 }
-
-
-
-
-
-
-
-
-
 
 
 /* Media Queries */
@@ -364,7 +355,6 @@ main .products .my-btn-color:hover {background-color: #58241796}
 @media screen and (max-width: 1200px) {
     
 }
-
 
 /* Dispositivos xxl */
 @media screen and (max-width: 1400px) {

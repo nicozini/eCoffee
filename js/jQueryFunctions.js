@@ -21,7 +21,6 @@ $(document).ready(function () {
 
   // Simulator  
   $(".simulator-button").click(function () {
-
     $(".data-simulator-enter").slideToggle("slow")
 
     $(".calculate-simulator").click(function (event) {
