@@ -36,7 +36,6 @@ Consideraciones:
 
 - El avance de mi proyecto corresponde a la entrega final del proyecto integrador en el marco de Corderhouse 2021/2022 y sus entregas (desafíos) parciales.
 - Para testear el mismo, ejecutar el archivo index.html con la extensión "Live Server" en VSC y verificar la consola del navegador.
-- No difundir el código.
 
 
 ********************************************************
