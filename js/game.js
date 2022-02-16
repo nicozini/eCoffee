@@ -19,6 +19,7 @@ $(document).ready(function () {
             const price = $("#coffeePriceGame").val();
             
             // Storage
+            // IMPORTANTE: el alert para saludar al usuario e interactuar con storage es intencional. 
             let playerInStorage = localStorage.getItem('name');
     
             if (playerInStorage == null) {
